@@ -30,45 +30,7 @@ export default function Home() {
       <main>
         <Board />
       </main>
-      <div>
-        <h2>🚀 Create your own game</h2>
-        <p>
-          Join my{" "}
-          <a
-            href="https://assets.mateu.sh/r/github-2048-in-react-readme"
-            target="_blank"
-            rel="noopener"
-          >
-            Udemy course
-          </a>{" "}
-          and learn how to create the 2048 game from scratch.
-        </p>
-      </div>
-      <footer>
-        <div className={styles.socials}>
-          <a
-            href="https://github.com/mateuszsokola/2048-in-react"
-            target="_blank"
-            rel="noopener"
-          >
-            <Image
-              src="social-github.svg"
-              alt="2048-in-react on GitHub"
-              width={32}
-              height={32}
-            />
-          </a>
-          <a href="https://twitter.com/msokola" target="_blank" rel="noopener">
-            <Image
-              src="social-twitter.svg"
-              alt="Matéush on Twitter"
-              width={32}
-              height={32}
-            />
-          </a>
-        </div>
-        <div>Made with ❤️ by Matéush</div>
-      </footer>
+     
     </div>
   );
 }
