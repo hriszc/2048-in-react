@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+import Script from "next/script";
 import Board from "@/components/board";
 import Score from "@/components/score";
 import styles from "@/styles/index.module.css";
@@ -7,15 +7,19 @@ import styles from "@/styles/index.module.css";
 export default function Home() {
   return (
     <div className={styles.twenty48}>
-         <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-QN19RKW8MC"></script>
-        <script>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-QN19RKW8MC"
+        strategy="afterInteractive"
+      />
+      <Script id="gtag-init" strategy="afterInteractive">
+        {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-        
+
           gtag('config', 'G-QN19RKW8MC');
-        </script>
+        `}
+      </Script>
       <Head>
      
         <title>Play 2048</title>
