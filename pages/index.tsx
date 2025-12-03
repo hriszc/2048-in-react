@@ -7,16 +7,17 @@ import styles from "@/styles/index.module.css";
 export default function Home() {
   return (
     <div className={styles.twenty48}>
+         <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-QN19RKW8MC"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-QN19RKW8MC');
+        </script>
       <Head>
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QN19RKW8MC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-QN19RKW8MC');
-</script>
+     
         <title>Play 2048</title>
         <meta
           name="description"
